@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-secondary text-white border-bottom py-3 sticky-top">
+  <div class="container">
+    <!-- Brand Name -->
+    <a class="navbar-brand fw-bold text-white" href="shop.html">Ravlon</a>
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" style="color:white;background-color: navajowhite;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar items and cart icon -->
+    <div class="collapse navbar-collapse justify-content-between" id="navContent">
+      <!-- Centered nav links -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
+        <li class="nav-item">
+          <a class="nav-link active px-3 text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="contact.html">Contact</a>
+ </li>
+      </ul>
+
+      <!-- Cart icon on right -->
+         <a href="#" class="btn position-relative text-white" data-bs-toggle="modal" data-bs-target="#cartModal">
+  <i class="bi bi-cart fs-4"></i>
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+    0
+  </span>
+</a>
+    
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4">About Us</h1>
+    <p class="lead">Discover our story and passion for fashion.</p>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/batt.jpg" alt="Our Store" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Our Journey</h2>
+        <p>We started with a simple idea — to bring stylish, affordable clothing to everyone. From small beginnings, we've grown into a brand trusted by thousands.</p>
+        <p>Our team is passionate about design, quality, and making our customers feel confident and comfortable in their clothes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2>Why Shop With Us</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>High Quality</h5>
+        <p>We use only premium fabrics and materials in every product.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Affordable Prices</h5>
+        <p>We make fashion accessible with fair and competitive pricing.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Fast Support</h5>
+        <p>Our team is here to help you with any issue—anytime, anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-neon-section text-center text-white py-5">
+  <div class="container">
+    <h3 class="neon-text mb-4">Ready to Upgrade Your Wardrobe?</h3>
+    <a href="shop.html" class="btn btn-glow px-4 py-2">Shop Now</a>
+  </div>
+</section>
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Cart Items: <span id="modal-cart-count">0</span></p>
+        <button class="btn btn-warning me-2" onclick="removeFromCart()">Remove One</button>
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

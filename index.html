@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-commerce product landing page</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light border-bottom py-3 sticky-top">
+  <div class="container">
+    <!-- Brand Name -->
+    <a class="navbar-brand fw-bold fs-3" href="index.html">Ravlon</a>
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar items and cart icon -->
+    <div class="collapse navbar-collapse justify-content-between" id="navContent">
+      <!-- Centered nav links -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active px-3 fs-5" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 fs-5" href="contact.html">Contact</a>
+        </li>
+      </ul>
+   <a href="#" class="btn position-relative text-dark" data-bs-toggle="modal" data-bs-target="#cartModal">
+  <i class="bi bi-cart fs-4"></i>
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="cart-count">
+    0
+  </span>
+</a>
+      
+      
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+
+<div class="container" style="
+    background: url('images/back1.jpg') center center / cover no-repeat;
+    width: 100%;
+    min-height: 600px;
+    padding: 80px 20px;
+    border-radius: 10px;">
+
+ <h1 class="text-white pt-5 display-2 text-start">Welcome to Ravlon</h1>
+    <p class="text-white pt-4 display-6 text-start">Your Fashion Destination</p>
+    <button class="btn btn-dark blue mt-2">Explore</button>
+</div>
+ </section>
+<section class="product">
+	<h1 class="text-center">Shop By Category</h1>
+	<div class="container">
+<div class="row g-4">
+<div class="col-md-6 bg-secondary mt-5 p-4" style="background-image: url('images/background.jpg'); background-size: cover; background-position: center; min-height: 400px;">
+<div class="row g-4">
+<div class="col-md-6">
+	<h1 class="text-start text-orange">Ravlon</h1>
+	<p class="text-orange">Your Fashion Choice</p>
+	 <button class="btn btn-dark"> <a href="shop.html"class="text-decoration-none text-white ">Shop Now</a></button>
+</div>
+ 
+    </div>
+    <div class="row mt-4">
+<div class="col-md-4 mt-4">
+ <div class="card">
+ </div>
+</div>
+ </div>
+</div>
+
+
+<div class="col-md-6 ">
+<div class="row">
+<div class="col-md-6">
+	<div class="card text-white mt-4">
+  <div class="position-relative">
+    <img src="images/bag.jpg" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">Bags</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+
+<div class="card text-white bg-dark bg-opacity-50 mt-4">
+  <div class="position-relative">
+    <img src="images/tshirt.png" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">T-shirt</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card text-white mt-4">
+  <div class="position-relative">
+    <img src="images/shoe.jpg" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">Running Shoes</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-md-6 mt-4">
+	<div class="card text-white">
+  <div class="position-relative">
+    <img src="images/heel.jpg" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">High heels</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+<div class="card text-white mt-4">
+  <div class="position-relative">
+    <img src="images/suit.jpg" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">Suit</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+<div class="card text-white mt-4">
+  <div class="position-relative">
+    <img src="images/long.jpg" class="card-img" alt="...">
+    <div class="position-absolute top-0 start-0 ms-3 translate-top text-center">
+      <h5 class="card-title">long dress</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</div>
+</section>
+<section class="promo-banner text-white text-center py-5" style="background: url('images/banner.jpg') center/cover;width: 100%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+    <h2 class="display-4 text-warning">Summer Sale 50% Off!</h2>
+    <p>Shop your favorites before they're gone!</p>
+    <a href="shop.html" class="btn btn-warning">Shop Now</a>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="mb-4">What Our Customers Say</h2>
+    
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <p class="card-text">"Absolutely love the quality of the clothes! Fast delivery and great service."</p>
+              <h5 class="card-title mt-3 mb-0">– Sarah M.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <p class="card-text">"Amazing discounts and stylish collections. Will definitely shop again!"</p>
+              <h5 class="card-title mt-3 mb-0">– James L.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+              <p class="card-text">"Very easy-to-use website and excellent customer support."</p>
+              <h5 class="card-title mt-3 mb-0">– Aisha R.</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h3>Join Our Newsletter</h3>
+    <form class="d-flex justify-content-center mt-3">
+      <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+      <button class="btn btn-warning">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2025 Ravlon. All Rights Reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Cart Items: <span id="modal-cart-count">0</span></p>
+        <button class="btn btn-warning me-2" onclick="removeFromCart()">Remove One</button>
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

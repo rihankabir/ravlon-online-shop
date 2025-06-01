@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-commerce product landing page</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-dark text-white border-bottom py-3 sticky-top">
+  <div class="container">
+    <!-- Brand Name -->
+    <a class="navbar-brand fw-bold text-white" href="shop.html">Ravlon</a>
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" style="color:white;background-color: navajowhite;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar items and cart icon -->
+    <div class="collapse navbar-collapse justify-content-between" id="navContent">
+      <!-- Centered nav links -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
+        <li class="nav-item">
+          <a class="nav-link active px-3 text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white" href="contact.html">Contact</a>
+ </li>
+      </ul>
+
+      <!-- Cart icon on right -->
+      <a href="#" class="btn position-relative text-white" data-bs-toggle="modal" data-bs-target="#cartModal">
+  <i class="bi bi-cart fs-4"></i>
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+    0
+  </span>
+</a>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="mb-3">Get in Touch</h2>
+    <p class="lead">Have questions or feedback? We'd love to hear from you!</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <form>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5 mt-3">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h4>Or Reach Us At</h4>
+    <p class="mb-1"><strong>Email:</strong> support@ravlonstore.com</p>
+    <p class="mb-1"><strong>Phone:</strong> +123 456 7890</p>
+    <p><strong>Address:</strong> 123 Fashion Street, Style City, USA</p>
+  </div>
+</section>
+<section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.935538013634!2d-74.01041728459314!3d40.70331277933171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19c8b0e8c1%3A0x4b8e8a6b5f9c0d0!2s55%20Water%20St%2C%20New%20York%2C%20NY%2010004%2C%20USA!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+            What is your return policy?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept returns within 30 days of purchase. Items must be unused and in original packaging.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            How long does shipping take?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Shipping usually takes 3-5 business days depending on your location.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            Do you ship internationally?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we ship to most countries. Shipping fees and delivery times vary by destination.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Cart Items: <span id="modal-cart-count">0</span></p>
+        <button class="btn btn-warning me-2" onclick="removeFromCart()">Remove One</button>
+        <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
